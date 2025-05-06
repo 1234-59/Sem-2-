@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+float encontrarMayor(float valor1, float valor2) {
+    if (valor1 > valor2) {
+return valor1;
+    }
+    return valor2;
+}
+int main() {
+    float num1, num2;
+    printf("primer numero: ");
+    scanf("%f", &num1);
+    printf("segundo numero: ");
+    scanf("%f", &num2);
+    float mayor = encontrarMayor(num1, num2);
+    printf("El mayor de los dos números es: %.2f\n", mayor);
+    return 0;
+}
