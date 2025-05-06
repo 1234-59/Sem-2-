@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int len;
+    char origen [100];
+    char destino [100];
+    printf("Ingresa la palabra: ");
+    scanf("%s", origen);
+    printf("Ingresa otra palabra: ");
+    scanf("%s", destino);
+    len= strlen (origen);
+    strcat(origen, destino);
+    for(int i = 0; i <len; i++) {
+    strcat(origen, destino);
+    }
+    printf("destino: %s\n", origen);
+    return 0;
+}
