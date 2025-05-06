@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct CD{
+char titulo [100];
+    char nombre[50];
+    char numeroCanciones[50];
+    char anio [50];
+    char precio[50];
+};
+
+int main() {
+    struct CD album;
+printf(" ingrese el titulo de la canción: \n");
+scanf( "%s", &album.titulo);
+    printf("Ingrese el nombre del álbum: ");
+    scanf( "%s", &album.nombre) ;
+
+    printf("Ingrese el número de canciones: ");
+    scanf("%s", &album.numeroCanciones);
+
+    printf("Ingrese el año de lanzamiento: ");
+    scanf("%s", &album.anio);
+
+    printf("Ingrese el precio: ");
+    scanf("%s", &album.precio);
+
+    printf("título: %s\n",album.titulo);
+    printf("Nombre: %s", album.nombre);
+    printf("Número de canciones: %s\n", album.numeroCanciones);
+    printf("Año: %s\n", album.anio);
+    printf("Precio: $%.2s\n", album.precio);
+
+    return 0;
+}
